@@ -50,7 +50,7 @@ public class ReflectionActivity : Activity
         {
             string question = _questions[_rand.Next(_questions.Count)];
             Console.WriteLine("\n" + question);
-            Spinner(5); // pause between each reflection question
+            Spinner(5);
         }
 
         DisplayEndMessage();
