@@ -23,11 +23,12 @@ class Program
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
         Console.WriteLine($"Total: ${order1.GetTotalCost()}");
+        Console.WriteLine("---------------------------------");
         Console.WriteLine();
 
         Console.WriteLine(order2.GetPackingLabel());
         Console.WriteLine(order2.GetShippingLabel());
         Console.WriteLine($"Total: ${order2.GetTotalCost()}");
-        Console.WriteLine();
+        Console.WriteLine("---------------------------------");
     }
 }

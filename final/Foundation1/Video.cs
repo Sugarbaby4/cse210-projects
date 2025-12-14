@@ -26,6 +26,7 @@ public class Video
     }
     public void DisplayVideoInfo()
     {
+        Console.WriteLine("=================================");
         Console.WriteLine($"Title: {_title}");
         Console.WriteLine($"Author: {_author}");
         Console.WriteLine($"Length: {_lengthSeconds} seconds");
@@ -34,7 +35,9 @@ public class Video
         foreach (Comment c in _comments)
         {
             Console.WriteLine($" - {c.Display()}");
-            Console.WriteLine();
         }
+
+        Console.WriteLine("=================================");
+        Console.WriteLine();
     }
 }

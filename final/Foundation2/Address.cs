@@ -21,6 +21,6 @@ public class Address
     }
     public override string ToString()
     {
-        return $"{_street} {_city}, {_stateOrProvence} {_country}";
+        return $"{_street}\n{_city}, {_stateOrProvence}\n{_country}";
     }
 }

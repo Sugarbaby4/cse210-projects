@@ -30,17 +30,17 @@ public class Order
     }
     public string GetPackingLabel()
     {
-        string label = "Packing Label:";
+        string label = "---Packing Label---\n";
 
         foreach (Product p in _products)
         {
-            label += $"{p.GetName()} (ID: {p.GetProductID()})";
+            label += $"- {p.GetName()} (ID: {p.GetProductID()})\n";
         }
 
         return label;
     }
     public string GetShippingLabel()
     {
-        return $"Shipping Label: {_customer.GetName()} {_customer.GetAddress()}";
+        return $"---Shipping Label--- \n{_customer.GetName()}\n{_customer.GetAddress()}";
     }
 }
